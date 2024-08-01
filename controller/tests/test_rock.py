@@ -47,7 +47,7 @@ def test_rock(rock_test_env):
             "exec",
             "ls",
             "-la",
-            "controller",
+            "/bin/controller",
         ],
         check=True,
     )

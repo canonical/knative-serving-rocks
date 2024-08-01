@@ -47,7 +47,7 @@ def test_rock(rock_test_env):
             "exec",
             "ls",
             "-la",
-            "default-domain",
+            "/bin/default-domain",
         ],
         check=True,
     )
