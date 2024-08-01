@@ -1,7 +1,7 @@
-name: knative-serving-controller
+name: knative-serving-autoscaler
 base: ubuntu@24.04
 version: v1.12.0
-summary: Knative Serving Controller
+summary: Knative Serving Autoscaler
 description: This image is used as part of the Charmed Kubeflow product
 license: Apache-2.0
 
@@ -11,7 +11,7 @@ platforms:
 services:
   controller:
     override: merge
-    command: "controller"
+    command: "autoscaler"
     startup: enabled
     user: ubuntu
 
@@ -23,4 +23,4 @@ parts:
     source: https://github.com/knative/serving.git
     source-tag: knative-v1.12.0
     source-depth: 1
-    source-subdir: cmd/controller/
+    source-subdir: cmd/autoscaler/
